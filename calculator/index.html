@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Janisar's Calculator</title>
+</head>
+
+<body class="px-80 py-40">
+    <div class=" bg-slate-900 h-max w-max mx-80 rounded-3xl ">
+        <div class="mx-2">
+            <input class=" my-4 bg-transparent text-5xl text-end w-96 border-none outline-none text-white " type="text" id="resDisplay"
+                placeholder="0">
+        </div>
+        <div class="h-max mx-7 py-5">
+            <div class="space-x-1">
+                <button class="bg-slate-600 px-3 py-3 mx-1 rounded-xl w-40 text-3xl text-white hover:bg-slate-500n" onclick="clrscr()">AC</button>
+                <button class="bg-slate-600 px-3 py-3 rounded-xl w-20 text-3xl text-white hover:bg-slate-500n" onclick="display('%')">%</button>
+                <button class="bg-slate-600 px-3 py-3 rounded-xl w-20 text-3xl text-white hover:bg-slate-500n" onclick="display('/')">/</button>
+            </div>
+            <div class="space-x-1  my-1"> 
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('7')">7</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('8')">8</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('9')">9</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('*')">*</button>
+            </div>
+            <div class="space-x-1 my-1">
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('4')">4</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('5')">5</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('6')">6</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('-')">-</button>
+            </div>
+            <div class="space-x-1 my-1">
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('1')">1</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('2')">2</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('3')">3</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('+')">+</button>
+            </div>
+            <div class="space-x-1 my-1">
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('00')">00</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('0')">0</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="display('.')">.</button>
+                <button class="bg-slate-600 px-4 py-4 rounded-xl w-20 text-3xl text-white font-bold hover:bg-slate-500n"
+                    onclick="calculate()">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

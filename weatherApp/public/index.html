@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="app.js"></script>
+        <title>Weather App</title>
+</head>
+
+<body class="bg-[url('images/bg.jpg')]">
+    <div class="sm:mx-[4rem] my-[2rem] w-max lg:mx-[35rem] my-[5rem] ">
+        <div class="mt-0 text-white font-bold text-center text-2xl  rounded-2xl">
+            <h1 class="m-2 p-2 bg-purple-800 rounded-xl ">Weather application</h1>
+        </div>
+        <div class="m-[1rem] mt-0 w-max ">
+            <h1 class=" mx-5 p-2 rounded-xl text-xl text-white font-bold">Enter city name</h1>
+            <input class="mt-0 m-5 p-2  rounded-md" type="text" id="search">
+            <button class="bg-purple-600 p-2 rounded-md font-bold text-white hover:bg-purple-700"
+                onclick="getData()">Search</button>
+        </div>
+        <div class=" bg-purple-500 rounded-md " id="weather">
+
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
